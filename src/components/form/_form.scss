@@ -1,0 +1,94 @@
+@import '../../../sass/_settings';
+
+.form-body {
+    @media screen and (max-width: 320px) {
+        padding: 20% 10% 40% 10%
+    }
+    padding: 20% 24%;
+    form {
+        position: relative;
+        .form-group {
+            display: flex;
+            border-bottom: 1px solid $color-light-text;
+
+            margin-bottom: 40px;
+            input,
+            textarea {
+                font-weight: 400;
+                width: 100%;
+                background-color: unset;
+                color: $color-light-text;
+                border: none;
+                padding-left: 10px;
+                margin-left: 10px;
+
+                &:-webkit-autofill,
+                &:-webkit-autofill:hover,
+                &:-webkit-autofill:focus
+                &:-webkit-autofill {
+                    background-color: unset!important;
+                    color: white!important;
+                }  
+                .submit-message {
+                    font-size: 28px;
+                    margin-top: 100px;
+                    text-align: center;
+                }
+            }
+            label {
+                @media screen and (max-width: 320px) {    
+                    font-size: 0.8rem;
+                }
+                display: flex;
+                color: $color-light-text;
+                .required {
+                    font-size: 0.8rem;
+                    color: $color_required;
+                    vertical-align: text-top;
+                    margin-left: 5px;
+                }
+            }
+            &-message {
+                margin-top: 150px;
+            }
+        }
+        .btn {
+            color: #fff;
+            background-color: #337ab7;
+            border-color: #2e6da4;
+
+            @media screen and (max-width: 320px) {
+                padding: 10px 30px;    
+                font-size: 0.8rem;
+            }
+
+            display: inline-block;
+            font-size: 1.1rem;
+            padding: 10px 40px;
+            margin-bottom: 0;
+            font-weight: 400;
+            line-height: 1.42857143;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-image: none;
+            border: 1px solid transparent;
+            border-radius: 4px;
+
+            position: absolute;
+            right: 0px;
+
+            
+        }
+    }
+}
+
+  
+   

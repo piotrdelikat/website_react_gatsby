@@ -1,0 +1,12 @@
+.card {
+    &-body {
+        padding: 3%;
+    }
+    &-date {
+        font-size: 0.8rem;
+        text-align: right;
+    }
+    &-title {
+        text-align: center
+    }
+}

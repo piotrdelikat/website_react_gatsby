@@ -1,0 +1,46 @@
+html,
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+#___gatsby,
+.wrapper {
+    display: inherit;
+    min-height: inherit;
+    flex-direction: inherit;
+}
+
+.row {
+    @media screen and (max-width: 320px) {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.content {
+    flex: 1;
+    background-color: $color_background;
+    &-container {
+        padding-left:0px;
+        padding-right:0px;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
