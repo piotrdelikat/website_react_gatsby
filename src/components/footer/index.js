@@ -8,7 +8,7 @@ const Footer = () =>
         <div className="col-12">
           <div className="footer-content flex-column">
             <hr className="footer-content-line"/>
-            <h3 className="footer-content-text">Powered by PGS</h3>
+            <h3 className="footer-content-text">Copyright &#169; 2018</h3>
           </div>
         </div>
       </div>
